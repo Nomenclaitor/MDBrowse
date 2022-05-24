@@ -1,0 +1,23 @@
+ion-card {
+  background-color: #f4f1d6;
+  border-radius: 8px;
+  padding: 8px;
+  width: 320px;
+  height: 100%;
+}
+ion-title {
+  color: #0d0d0d;
+  text-align: center;
+  text-overflow: inherit;
+  white-space: normal;
+}
+ion-grid {
+  background-color: #FF6961;
+}
+
+ion-card-title {
+  display: block;
+  font-size: large;
+  line-height: 150%;
+  color: #0d0d0d;
+}

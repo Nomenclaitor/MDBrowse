@@ -1,0 +1,7 @@
+{
+  "name": "MDBrowse",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

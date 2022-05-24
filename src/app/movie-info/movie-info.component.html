@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-title class="ion-text-center">{{selectedMovie.Title}}</ion-title>
+</ion-header>
+
+<ion-content class="ion-align-items-center">
+  <ion-col>
+    <ion-card class="ion-align-self-center, ion-align-items-center">
+      <ion-img src="{{selectedMovie.Poster}}"></ion-img>
+      <ion-card-title>{{selectedMovie.Title}}</ion-card-title>
+      <ion-card-content>
+        <ion-item>
+          <ion-label> Duración: {{selectedMovie.Runtime}}</ion-label>
+          <ion-label class="ion-text-wrap"> Idioma: {{selectedMovie.Language}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label> Director: {{selectedMovie.Director}}</ion-label>
+          <ion-label class="ion-text-wrap">Actores: {{selectedMovie.Actors}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label> Sinopsis: </ion-label>
+          <ion-label class="ion-text-wrap"> {{selectedMovie.Plot}}</ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+</ion-content>
