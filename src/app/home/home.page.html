@@ -12,15 +12,7 @@
 <ion-content  class="ion-align-items-center">
     <ion-grid>
       <ion-row>
-          <ion-col *ngFor="let movie of movieList | slice: 0: 5">
-            <ion-card [routerLink]="['/info', movie.imdbID]">
-              <ion-img src="{{movie.Poster}}"></ion-img>
-              <ion-card-title style="text-align: center">{{movie.Title}}</ion-card-title>
-            </ion-card>
-          </ion-col>
-      </ion-row>
-      <ion-row>
-          <ion-col *ngFor="let movie of movieList | slice: 5 : 10">
+          <ion-col *ngFor="let movie of movieList" size="auto">
             <ion-card [routerLink]="['/info', movie.imdbID]">
               <ion-img src="{{movie.Poster}}"></ion-img>
               <ion-card-title style="text-align: center">{{movie.Title}}</ion-card-title>
